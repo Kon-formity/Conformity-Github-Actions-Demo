@@ -44,7 +44,7 @@ Resources:
         Version: 2012-10-17
         Id: Challenge-Bucket-Policy
         Statement:
-          - Sid: DenyIncorrectEncryptionHeader
+          - Sid: DenyIncorrectEncryptionHeaders
             Effect: Deny
             Principal: "*"
             Action: s3:PutObject
