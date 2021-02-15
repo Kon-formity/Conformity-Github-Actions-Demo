@@ -56,7 +56,7 @@ Resources:
             Condition:
               StringNotEquals:
                 s3:x-amz-server-side-encryption: AES256
-          - Sid: DenyUnEncryptedObjectUploads
+          - Sid: DenyUnEncryptedObjectUpload
             Effect: Deny
             Principal: "*"
             Action: s3:PutObject
