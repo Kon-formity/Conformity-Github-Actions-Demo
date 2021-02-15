@@ -45,7 +45,7 @@ Resources:
         Id: Challenge-Bucket-Policy
         Statement:
           - Sid: DenyIncorrectEncryptionHeader
-            Effect: Deny
+            Effect: Allow
             Principal: "*"
             Action: s3:PutObject
             Resource: !Join 
@@ -57,7 +57,7 @@ Resources:
               StringNotEquals:
                 s3:x-amz-server-side-encryption: AES256
           - Sid: DenyUnEncryptedObjectUploads
-            Effect: Deny
+            Effect: Allow
             Principal: "*"
             Action: s3:PutObject
             Resource: !Join 
@@ -69,7 +69,7 @@ Resources:
               'Null':
                 s3:x-amz-server-side-encryption: 'false'
           - Sid: ForceSSLOnlyAccess
-            Effect: Deny
+            Effect: Allow
             Principal:
                 AWS: "*"
             Action: s3:PutObject
