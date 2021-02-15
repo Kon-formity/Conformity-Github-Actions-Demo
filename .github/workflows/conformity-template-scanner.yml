@@ -18,7 +18,7 @@ jobs:
         maxExtreme: 0
         maxVeryHigh: 0
         maxHigh: 0
-        maxMedium: 10
-        maxLow: 15
+        maxMedium: 0
+        maxLow: 0
         cc_region: ap-southeast-2
         templatePath: simple-s3-template.yaml
