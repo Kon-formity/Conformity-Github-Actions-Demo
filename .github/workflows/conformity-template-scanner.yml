@@ -21,4 +21,4 @@ jobs:
         maxMedium: 10
         maxLow: 15
         cc_region: us-west-2
-        templatePath: actionstest.yaml
+        templatePath: simple-s3-template.yaml
