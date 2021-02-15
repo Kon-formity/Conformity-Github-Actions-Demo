@@ -3,7 +3,7 @@ name: Conformity-Template-Scanner-GitHubAction
 on: 
   push:
     paths: 
-      - actionstest.yaml
+      - simple-s3-template.yaml
 
 jobs:      
   CloudFormation-Scan:
