@@ -3,7 +3,7 @@ name: Conformity-Template-Scanner-GitHubAction
 on: 
   push:
     paths: 
-      - simple-s3-template.yaml
+      - hardenedbucket.yaml
 
 jobs:      
   CloudFormation-Scan:
@@ -21,4 +21,4 @@ jobs:
         maxMedium: 0
         maxLow: 0
         cc_region: ap-southeast-2
-        templatePath: simple-s3-template.yaml
+        templatePath: hardenedbucket.yaml
