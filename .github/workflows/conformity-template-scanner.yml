@@ -17,8 +17,8 @@ jobs:
         cc_apikey: ${{ secrets.apikey }}
         maxExtreme: 0
         maxVeryHigh: 0
-        maxHigh: 5
-        maxMedium: 10
-        maxLow: 10
+        maxHigh: 0
+        maxMedium: 5
+        maxLow: 5
         cc_region: ap-southeast-2
         templatePath: actionstest.yaml
